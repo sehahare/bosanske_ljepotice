@@ -1,15 +1,23 @@
-<div class = "menu">
-<a href="#main" class="btn btn-danger btn-lg">Home</a>
-<a href="#mountains" class="btn btn-success btn-lg">Amazing Mountains</a>
-<a href="#contact" class="btn btn-danger btn-lg">Amazing Rivers</a>
-</div>
+<h3>Contact Us</h3>
 
- <div class = "form_style">
-   <form>       
+<a href="#main" class="btn btn-danger btn-lg">Home</a>
+<a href="#rivers" class="btn btn-danger btn-lg">Amazing Lakes and Rivers</a>
+<a href="#mountains" class="btn btn-success btn-lg"> Amazing Mountains</a>
+
+
+
+<div class="contact_form">
+
+<form>  
+     Sex: <input type="radio" ng-model="sex" value="Male"/>Male
+          <input type="radio" ng-model="sex" value="Female"/>Female <br />
+          <br/>
      First Name: <input type="text" ng-model="fname"/> <br />
      Last Name: <input type="text" ng-model="lname"/> <br />
      City: <input type="text" ng-model="city"/> <br />
-     Mob: <input type="text" ng-model="number"/> <br />
+     Mob: <input type="text" ng-model="contact"/> <br />
+     
      <input type="button" value="submit" ng-click="insertdata()"/><br />  
-   </form>  
- </div>
+   </form> 
+    
+</div> 

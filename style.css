@@ -78,16 +78,6 @@ body{
 }
 
 
-/*.footer {
-
-   clear: both;
-    position: relative;
-    z-index: 10;
-    height: 3em;
-    bottom:0;
-    border-top: 1px solid #eee;
-}*/
-
 .page h1    { font-size: 2.5vw;   color: powderblue; }
 .page h2    {color: #5f5f5f; font-size: 2vw;}
 
@@ -201,6 +191,24 @@ body{
 .row2{
     
 }
+
+
+form{
+    color:black;
+    margin-top:2%;
+    display: inline-block;
+    width:250px
+    
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0.5%;
+   
+}
+
+
 /* PAGES
 
 ============================================================================= */
@@ -224,13 +232,10 @@ body{
                 }
  .page-rivers h1 { color: olivedrab; }
  
- .page-contact { background:url('img/contact.png'); background-repeat: no-repeat; background-color: #5f5f5f; color:#d6d6d6;  
+ .page-contact { background:url('img/contact.png'); background-repeat: no-repeat; background-color: black; color:black;  
                 padding-top: 450px;
                 background-size:100%;
                 padding-top: 180px; 
-}
-.form_style{
-    color:black;
 }
 
 

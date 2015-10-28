@@ -77,16 +77,14 @@ animateApp.controller('listOfMountains',['$scope','$http', function($scope, $htt
     
 ]);
 
-animateApp.controller('contactController',['$scope', '$http', function($scope, $http) {
-      $scope.insertdata=function(){
-        $http.post('insert.php',{'fname': $scope.fname, 'lname': $scope.lname, 'city': $scope.city, 'number': $scope.number})
-                .success(function(data){
+animateApp.controller('contactController', function($scope, $http){
+    $scope.pageClass = 'page-contact';
+    $scope.insertdata=function(){
+         $http.post('insert.php',{'sex':$scope.sex,'fname': $scope.fname, 'lname': $scope.lname, 'city': $scope.city, 'contact': $scope.contact})
+                .success(function(data, status, headers, config){
                     console.log("data inserted successfully");
                 });
-        };
+               };
         
-    
-   $scope.pageClass = 'page-contact';
-
-}]);
+});
 
