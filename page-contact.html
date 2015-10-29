@@ -1,17 +1,25 @@
 <h3>Contact Us</h3>
 
+
+<a href="#rivers" class="btn btn-info btn-lg">Amazing Lakes and Rivers</a>
 <a href="#main" class="btn btn-danger btn-lg">Home</a>
-<a href="#rivers" class="btn btn-danger btn-lg">Amazing Lakes and Rivers</a>
-<a href="#mountains" class="btn btn-success btn-lg"> Amazing Mountains</a>
+<a href="#mountains" class="btn btn-info btn-lg"> Amazing Mountains</a>
 
 
 
 <div class="contact_form">
 
 <form>  
-     Sex: <input type="radio" ng-model="sex" value="Male"/>Male
-          <input type="radio" ng-model="sex" value="Female"/>Female <br />
-          <br/>
+     Sex: <label class="radio-inline">
+      <input type="radio" ng-model="sex" value="Male">Male
+    </label>
+    <label class="radio-inline">
+        <input type="radio" ng-model="sex" value="Female">Female
+    </label> <br/><br/>
+    
+     
+     
+    
      First Name: <input type="text" ng-model="fname"/> <br />
      Last Name: <input type="text" ng-model="lname"/> <br />
      City: <input type="text" ng-model="city"/> <br />
